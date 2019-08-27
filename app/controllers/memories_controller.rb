@@ -1,22 +1,24 @@
 class MemoriesController < ApplicationController
 
 	def index
-		@memory = Memory.first
+		@memories = Memory.all
 	end
-
+  
 	def new
-		@memory = Memory.new
+		@memories = Memory.new
 	end
 
 	def create
-		Memory.create(memory_params)
+		Memory.new(memory_params)
+		redirect_to root_path
 	end
 
 
 	private
 
 	def memory_params
-		params.require(:memory).permit(:memory)
+		params.require(:memory).permit(:content)
 	end
+	
 
 end
