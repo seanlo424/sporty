@@ -1,6 +1,37 @@
 @import "bootstrap";
 
-h1 { 
-font-size: 34px;
+.clear {
+	clear: both;
+}
+
+.my_headline_font_size {
+	font-size: 24px;
+}
+
+header {
+	border-top: 9px solid #222222;
+}
+
+hr {
+	clear:both;
+}
+
+h1 {
+font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Bakersville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+font-style: italic;
+font-weight: bold;
+padding-top: 26px; 
+font-size: 40px;
 color: #07D0A3;
+}
+
+.links {
+	padding-top: 26px;
+}
+
+.links a {
+	color: red;
+	font-size: 30px;
+	border-bottom: 1px solid #dfdfdf;
+	font-weight: bold;
 }
